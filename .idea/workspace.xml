@@ -61,14 +61,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/test/com/olenaznak/services/DefaultLivingServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="92" column="33" lean-forward="true" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
+            <state relative-caret-position="85">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -145,22 +154,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/olenaznak/services/impl/DefaultLivingService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-              <folding>
-                <element signature="e#1724#1725#0" expanded="true" />
-                <element signature="e#1831#1832#0" expanded="true" />
-                <element signature="e#1941#1942#0" expanded="true" />
-                <element signature="e#2076#2077#0" expanded="true" />
-                <element signature="e#2196#2197#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -231,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/olenaznak/services/impl/DefaultRoomService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/olenaznak/configuration/AppConfiguration.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/template.tag" />
@@ -253,6 +245,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/olenaznak/controllers/ViolationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olenaznak/controllers/LivingController.java" />
         <option value="$PROJECT_DIR$/src/main/test/com/olenaznak/services/DefaultLivingServiceTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -287,10 +280,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="266" />
-    <option name="y" value="61" />
-    <option name="width" value="889" />
-    <option name="height" value="788" />
+    <option name="x" value="-7" />
+    <option name="width" value="1282" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -443,7 +435,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558073810539" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../order-service" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../oms" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -453,22 +445,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\WEB-INF" />
-      <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\resources\css" />
-      <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\resources" />
-      <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\resources\js" />
-      <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\WEB-INF\tags" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.olenaznak.configuration" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\tags" />
       <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\java\com\olenaznak\configuration" />
       <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp" />
       <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\WEB-INF\pages" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.olenaznak.configuration" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\WEB-INF" />
+      <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\resources\css" />
+      <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\resources" />
+      <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\resources\js" />
+      <recent name="C:\Users\Olena Znak\IdeaProjects\ChummeryCW\src\main\webapp\WEB-INF\tags" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -673,7 +665,7 @@
       <workItem from="1559384756430" duration="595000" />
       <workItem from="1559453322933" duration="35640000" />
       <workItem from="1559585011213" duration="2524000" />
-      <workItem from="1559593011285" duration="5667000" />
+      <workItem from="1559593011285" duration="6793000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <created>1558320426909</created>
@@ -686,12 +678,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DefaultViolationServiceTest_shouldReturnAllViolations - 2019.05.19 at 09h 46m 48s.xml">
-      <configuration name="DefaultViolationServiceTest.shouldReturnAllViolations" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DefaultViolationServiceTest_shouldReturnAllViolations - 2019.05.19 at 09h 50m 03s.xml">
-      <configuration name="DefaultViolationServiceTest.shouldReturnAllViolations" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DefaultViolationServiceTest - 2019.05.19 at 09h 50m 12s.xml">
       <configuration name="DefaultViolationServiceTest" configurationId="JUnit" />
     </history-entry>
@@ -716,9 +702,15 @@
     <history-entry file="DefaultStudentServiceTest - 2019.05.19 at 11h 14m 23s.xml">
       <configuration name="DefaultStudentServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DefaultLivingServiceTest_shouldReturnViolationByRoom - 2019.06.04 at 00h 52m 12s.xml">
+      <configuration name="DefaultLivingServiceTest.shouldReturnViolationByRoom" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultLivingServiceTest_shouldReturnViolationByRoom - 2019.06.04 at 00h 56m 01s.xml">
+      <configuration name="DefaultLivingServiceTest.shouldReturnViolationByRoom" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91325000" />
+    <option name="totallyTimeSpent" value="92451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -734,7 +726,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.10801964" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.0801964" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.46153846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -923,13 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="133" column="17" selection-start-line="133" selection-start-column="17" selection-end-line="133" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -1242,11 +1227,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/test/com/olenaznak/services/DefaultLivingServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="92" column="33" lean-forward="true" selection-start-line="92" selection-start-column="33" selection-end-line="92" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
         </state>
       </provider>
     </entry>

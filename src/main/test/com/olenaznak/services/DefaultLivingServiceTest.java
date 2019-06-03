@@ -78,7 +78,7 @@ public class DefaultLivingServiceTest {
     }
 
     @Test
-    public void shouldReturnViolationByRoom() {
+    public void testShouldReturnViolationByRoom() {
         int num = 0;
         Room room = mock(Room.class);
         Optional<Room> roomOptional = Optional.of(room);
