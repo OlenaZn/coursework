@@ -11,9 +11,9 @@ public interface LivingService {
 
     Optional<Living> getById(int id);
 
-    Optional<Living> getByStudent(String name, String surname);
+    Living getByStudent(String name, String surname);
 
-    Optional<Living> getByRoom(int number);
+    Living getByRoom(int number);
 
     void addLiving(Living living);
 

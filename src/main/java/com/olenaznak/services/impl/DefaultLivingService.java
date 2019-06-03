@@ -33,23 +33,26 @@ public class DefaultLivingService implements LivingService {
     }
 
     @Override
-    public Optional<Living> getByStudent(String name, String surname) {
+    public Living getByStudent(String name, String surname) {
         Optional<Student> studentOptional = studentService.getByNameAndSurname(name, surname);
         if(studentOptional.isPresent()) {
-            return livingDao.getByStudent(studentOptional.get());
+            Optional<Living> livingOptional = livingDao.getByStudent(studentOptional.get());
+            return livingOptional.orElse(null);
         } else {
-            return Optional.empty();
+            return null;
         }
     }
 
     @Override
-    public Optional<Living> getByRoom(int number) {
+    public Living getByRoom(int number) {
         Room room = roomService.getRoomNumber(number);
         if(room != null) {
-            return livingDao.getByRoom(room);
-        } else {
-            return Optional.empty();
+            Optional<Living> livingOptional = livingDao.getByRoom(room);
+            if(livingOptional.isPresent()) {
+                return livingOptional.get();
+            }
         }
+        return null;
     }
 
     @Override

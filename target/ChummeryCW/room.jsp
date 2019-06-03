@@ -55,11 +55,11 @@
                     class="arrow"></span></a>
             <table id="customers">
                 <tr>
-                    <td><c:out value="Room Number"/></td>
-                    <td><c:out value="Bed Amount"/></td>
-                    <td><c:out value="Free Beds Amount"/></td>
-                    <td><c:out value="Price per Month"/></td>
-                    <td><c:out value="Floor"/></td>
+                    <th><c:out value="Room Number"/></th>
+                    <th><c:out value="Bed Amount"/></th>
+                    <th><c:out value="Free Beds Amount"/></th>
+                    <th><c:out value="Price per Month"/></th>
+                    <th><c:out value="Floor"/></th>
                 </tr>
                 <c:forEach items="${rooms}" var="room">
                     <tr>

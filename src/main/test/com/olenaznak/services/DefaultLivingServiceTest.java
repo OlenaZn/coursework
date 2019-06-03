@@ -72,11 +72,10 @@ public class DefaultLivingServiceTest {
         when(studentService.getByNameAndSurname(NAME, SURNAME)).thenReturn(studentOptional);
         when(livingDao.getByStudent(student)).thenReturn(livingOptional);
 
-        Optional<Living> livingResult = defaultLivingService.getByStudent(NAME, SURNAME);
+        Living livingResult = defaultLivingService.getByStudent(NAME, SURNAME);
 
         assertNotNull(livingResult);
-        assertNotNull(livingResult.get());
-        assertEquals(living, livingResult.get());
+        assertEquals(living, livingResult);
     }
 
     @Test
@@ -90,11 +89,10 @@ public class DefaultLivingServiceTest {
         when(roomService.getRoomNumber(num)).thenReturn(room);
         when(livingDao.getByRoom(room)).thenReturn(livingOptional);
 
-        Optional<Living> livingResult = defaultLivingService.getByRoom(num);
+        Living livingResult = defaultLivingService.getByRoom(num);
 
         assertNotNull(livingResult);
-        assertNotNull(livingResult.get());
-        assertEquals(living, livingResult.get());
+        assertEquals(living, livingResult);
     }
 
 }

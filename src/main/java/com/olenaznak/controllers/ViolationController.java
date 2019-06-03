@@ -12,7 +12,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @RestController
 public class ViolationController {
@@ -20,32 +19,32 @@ public class ViolationController {
     private ViolationService violationService;
 
     @GetMapping(value = "/violation")
-    public ModelAndView getRooms(Authentication authentication){
-        ModelAndView roomView = new ModelAndView("violation");
+    public ModelAndView getViolations(Authentication authentication){
+        ModelAndView violationView = new ModelAndView("violation");
         // User user = (User) authentication.getPrincipal();
         List<Violation> violations = violationService.getAll();
 
-        roomView.addObject("violations", violations);
+        violationView.addObject("violations", violations);
 
-        return roomView;
+        return violationView;
     }
 
     @GetMapping(value = "/violation/{1d}")
-    public ModelAndView getRoom(@PathVariable("id") Integer id, Authentication authentication){
-        ModelAndView roomView = new ModelAndView("/violation");
+    public ModelAndView getViolation(@PathVariable("id") Integer id, Authentication authentication){
+        ModelAndView violationView = new ModelAndView("/violation");
         Optional<Violation> violation = violationService.getById(id);
-        violation.ifPresent(v -> roomView.addObject("violation", v));
-        return roomView;
+        violation.ifPresent(v -> violationView.addObject("violation", v));
+        return violationView;
     }
 
-    @PostMapping(value = "careate-violation")
-    public ModelAndView createLecture(@RequestBody Violation violation, UriComponentsBuilder ucBuilder, Authentication authentication) {
+    @PostMapping(value = "/careate-violation")
+    public ModelAndView createViolation(@RequestBody Violation violation, UriComponentsBuilder ucBuilder, Authentication authentication) {
         ModelAndView violationView = new ModelAndView("/violation");
         User user = (User) authentication.getPrincipal();
 
         violationService.addViolation(violation);
 
-        return getRooms(authentication);
+        return getViolations(authentication);
     }
 
     @Autowired

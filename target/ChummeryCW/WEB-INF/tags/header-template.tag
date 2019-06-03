@@ -47,7 +47,7 @@
                             code="navMenu.logout"/></a></li>
                 </c:if>
                 <c:if test="${isAdmin}">
-                    <c:url value="/lecture.html" var="lecture"/>
+                    <c:url value="/admin" var="admin"/>
                     <li><a href="${lecture}"><spring:message code="navMenu.lectures"/></a></li>
                 </c:if>
                 <%--<c:if test="${isAdmin}">--%>
