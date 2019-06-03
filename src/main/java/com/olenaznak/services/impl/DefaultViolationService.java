@@ -5,10 +5,13 @@ import com.olenaznak.models.Student;
 import com.olenaznak.models.Violation;
 import com.olenaznak.services.StudentService;
 import com.olenaznak.services.ViolationService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class DefaultViolationService implements ViolationService {
 
     private ViolationDao violationDao;
@@ -45,18 +48,12 @@ public class DefaultViolationService implements ViolationService {
         violationDao.deleteViolation(violation);
     }
 
-    public ViolationDao getViolationDao() {
-        return violationDao;
-    }
-
+    @Autowired
     public void setViolationDao(ViolationDao violationDao) {
         this.violationDao = violationDao;
     }
 
-    public StudentService getStudentService() {
-        return studentService;
-    }
-
+    @Autowired
     public void setStudentService(StudentService studentService) {
         this.studentService = studentService;
     }

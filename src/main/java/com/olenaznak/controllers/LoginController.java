@@ -18,7 +18,7 @@ public class LoginController {
 
     @RequestMapping(value = "/")
     public ModelAndView login(){
-        return new ModelAndView("index");
+        return new ModelAndView("WEB-INF/pages/index");
     }
 
     @RolesAllowed(value = "ROLE_USER")

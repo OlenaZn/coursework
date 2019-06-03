@@ -47,11 +47,10 @@ public class DefaultRoomServiceTest {
 
         when(roomDao.getById(id)).thenReturn(roomOptional);
 
-        Optional<Room> roomResult = defaultRoomService.getById(id);
+        Room roomResult = defaultRoomService.getById(id);
 
         assertNotNull(roomResult);
-        assertNotNull(roomResult.get());
-        assertEquals(room, roomResult.get());
+        assertEquals(room, roomResult);
     }
 
     @Test
@@ -62,11 +61,10 @@ public class DefaultRoomServiceTest {
 
         when(roomDao.getRoomNumber(num)).thenReturn(roomOptional);
 
-        Optional<Room> roomResult = defaultRoomService.getRoomNumber(num);
+        Room roomResult = defaultRoomService.getRoomNumber(num);
 
         assertNotNull(roomResult);
-        assertNotNull(roomResult.get());
-        assertEquals(room, roomResult.get());
+        assertEquals(room, roomResult);
     }
 
     @Test

@@ -7,6 +7,7 @@ import com.olenaznak.models.Student;
 import com.olenaznak.services.LivingService;
 import com.olenaznak.services.RoomService;
 import com.olenaznak.services.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -43,9 +44,9 @@ public class DefaultLivingService implements LivingService {
 
     @Override
     public Optional<Living> getByRoom(int number) {
-        Optional<Room> roomOptional = roomService.getRoomNumber(number);
-        if(roomOptional.isPresent()) {
-            return livingDao.getByRoom(roomOptional.get());
+        Room room = roomService.getRoomNumber(number);
+        if(room != null) {
+            return livingDao.getByRoom(room);
         } else {
             return Optional.empty();
         }
@@ -61,26 +62,17 @@ public class DefaultLivingService implements LivingService {
         livingDao.deleteLiving(living);
     }
 
-    public LivingDao getLivingDao() {
-        return livingDao;
-    }
-
+    @Autowired
     public void setLivingDao(LivingDao livingDao) {
         this.livingDao = livingDao;
     }
 
-    public StudentService getStudentService() {
-        return studentService;
-    }
-
+    @Autowired
     public void setStudentService(StudentService studentService) {
         this.studentService = studentService;
     }
 
-    public RoomService getRoomService() {
-        return roomService;
-    }
-
+    @Autowired
     public void setRoomService(RoomService roomService) {
         this.roomService = roomService;
     }

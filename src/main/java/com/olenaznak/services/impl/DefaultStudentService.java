@@ -3,6 +3,7 @@ package com.olenaznak.services.impl;
 import com.olenaznak.dao.StudentDao;
 import com.olenaznak.models.Student;
 import com.olenaznak.services.StudentService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -48,10 +49,7 @@ public class DefaultStudentService implements StudentService {
         studentDao.deleteStudent(student);
     }
 
-    public StudentDao getStudentDao() {
-        return studentDao;
-    }
-
+    @Autowired
     public void setStudentDao(StudentDao studentDao) {
         this.studentDao = studentDao;
     }

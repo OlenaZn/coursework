@@ -3,6 +3,7 @@ package com.olenaznak.dao;
 import com.olenaznak.models.Room;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -17,7 +18,17 @@ public class RoomDao {
     }
 
     public RoomDao() {
+    }
+
+    @PostConstruct
+    public void initialize() {
         roomList = new ArrayList<>();
+        Room room1 = new Room(1, "Standart", 6, 2, 300, 2);
+        Room room2 = new Room(2, "Comfort", 4, 3, 600, 3);
+        Room room3 = new Room(3, "Standart", 8, 1, 300, 1);
+        roomList.add(room1);
+        roomList.add(room2);
+        roomList.add(room3);
     }
 
     public List<Room> getAll() {

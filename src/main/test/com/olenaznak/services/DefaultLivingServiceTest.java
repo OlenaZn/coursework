@@ -87,7 +87,7 @@ public class DefaultLivingServiceTest {
         Living living = mock(Living.class);
         Optional<Living> livingOptional = Optional.of(living);
 
-        when(roomService.getRoomNumber(num)).thenReturn(roomOptional);
+        when(roomService.getRoomNumber(num)).thenReturn(room);
         when(livingDao.getByRoom(room)).thenReturn(livingOptional);
 
         Optional<Living> livingResult = defaultLivingService.getByRoom(num);

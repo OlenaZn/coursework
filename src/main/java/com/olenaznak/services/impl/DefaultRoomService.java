@@ -3,6 +3,7 @@ package com.olenaznak.services.impl;
 import com.olenaznak.dao.RoomDao;
 import com.olenaznak.models.Room;
 import com.olenaznak.services.RoomService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,13 +20,15 @@ public class DefaultRoomService implements RoomService {
     }
 
     @Override
-    public Optional<Room> getById(int id) {
-        return roomDao.getById(id);
+    public Room getById(int id) {
+        Optional<Room> roomOptional = roomDao.getById(id);
+        return roomOptional.orElse(null);
     }
 
     @Override
-    public Optional<Room> getRoomNumber(int num) {
-        return roomDao.getRoomNumber(num);
+    public Room getRoomNumber(int num) {
+        Optional<Room> roomOptional = roomDao.getRoomNumber(num);
+        return roomOptional.orElse(null);
     }
 
     @Override
@@ -39,7 +42,8 @@ public class DefaultRoomService implements RoomService {
     }
 
     @Override
-    public void deleteRoom(Room room) {
+    public void deleteRoom(int id) {
+        Room room = getById(id);
         roomDao.deleteRoom(room);
     }
 
@@ -47,7 +51,10 @@ public class DefaultRoomService implements RoomService {
         return roomDao;
     }
 
+    @Autowired
     public void setRoomDao(RoomDao roomDao) {
         this.roomDao = roomDao;
     }
+
+
 }

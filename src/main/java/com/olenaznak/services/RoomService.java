@@ -9,13 +9,13 @@ public interface RoomService {
 
     List<Room> getAll();
 
-    Optional<Room> getById(int id);
+    Room getById(int id);
 
-    Optional<Room> getRoomNumber(int num);
+    Room getRoomNumber(int num);
 
     List<Room> getRoomsWithFreeBeds();
 
     void addRoom(Room room);
 
-    void deleteRoom(Room room);
+    void deleteRoom(int id);
 }
