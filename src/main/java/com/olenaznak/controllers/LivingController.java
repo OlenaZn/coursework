@@ -32,8 +32,6 @@ public class LivingController {
         return roomView;
     }
 
-    ERROR
-
     @PostMapping(value = "careate-living")
     public ModelAndView createLecture(@RequestBody Living living, UriComponentsBuilder ucBuilder, Authentication authentication) {
         ModelAndView livingView = new ModelAndView("/living");

@@ -15,8 +15,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -91,7 +90,7 @@ public class DefaultLivingServiceTest {
 
         Living livingResult = defaultLivingService.getByRoom(num);
 
-        assertNotNull(livingResult);
+        assertNull(livingResult);
         assertEquals(living, livingResult);
     }
 
